@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>SIGN UP</h3>
+          <form [formGroup]="form" (ngSubmit)="onSignup()">
+              <div class="form-group">
+                  <label>Enter Mail-Id</label><br>
+                  <input type="email" class="form-control" formControlName="userMail">
+              </div>
+              <div class="form-group">
+                <label>Enter Password</label><br>
+                <input type="password" class="form-control" formControlName="password">
+            </div>
+            <div class="form-group">
+                <label>Re-Enter Your PassWord</label><br>
+                <input type="password" class="form-control" formControlName="password1">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit" >Sign Up</button> | <button
+                    class="btn btn-success" type="submit">Log In</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+            <h3>SIGN UP</h3>
+          <form>
+              <div class="form-group">
+                  <label>Enter Mail-Id</label><br>
+                  <input type="email" class="form-control" formControlName="loginMail">
+              </div>
+              <div class="form-group">
+                <label>Enter Password</label><br>
+                <input type="password" class="form-control" formControlName="loginPassword">
+            </div>
+            
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit" >Sign Up</button> | <button
+                    class="btn btn-success" type="submit">Log In</button>
+            </div>
+          </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="row">
+    <h2><b>{{post?.title | uppercase}} </b></h2>
+
+    <div class="col-md-12">
+        <p align="justify">
+            {{post?.description}}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <img style="max-width: 100%; max-height: 100%;" src="{{post?.imagelink}}" />
+        <br>
+    </div>
+
+
+    <div class="col-md-4">
+        <br>
+        <p><b>Author: </b>{{post?.author}} </p>
+        <p><b>Date :</b>{{post?.dateofcreated | date}}</p>
+
+        <a  class="btn-lg" (click)="likesCount()">
+            <span class="glyphicon glyphicon-thumbs-up"></span> 
+        </a> | Likes : {{post?.likes}}
+        
+        <br>
+        <br>
+        <button class="btn btn-primary" (click)="onEdit()">Edit</button> | <button (click)=OnDelete()
+            class="btn btn-danger">DELET</button>
+    </div>
+
+</div>
+<br>

@@ -1,0 +1,9 @@
+<div class="container">
+
+    <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Latest Posts........</h1>
+    <app-post *ngFor="let varPost of listOfPosts; let i = index" 
+        [post] = "varPost"
+        [index] = "i">
+    </app-post>
+    
+</div>
